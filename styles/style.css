@@ -2,8 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-
-  outline: 0.5px solid white;
 }
 
 html {
@@ -91,7 +89,7 @@ ol {
   object-fit: cover;
   color: #fff;
   text-align: center;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -142,7 +140,7 @@ ol {
   color: #fff;
   font-family: inherit;
   font-size: 18px;
-  background-color: rgb(255 255 255 / 0.15);
+  background-color: transparent;
   appearance: none;
   width: 225px;
 }
@@ -159,7 +157,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__checkbox-list .search-form__label:hover .search-form__label-text {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -205,7 +203,7 @@ ol {
 
 .content__accent {
   color: #545050;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -237,6 +235,8 @@ ol {
   line-height: 21px;
   background-color: transparent;
   cursor: pointer;
+  font-weight: 700;
+  padding: 6px;
 }
 
 .button:hover {
@@ -253,17 +253,16 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__submit-button {
   align-self: flex-end;
   inline-size: 194px;
-  padding: 6px;
 }
 
 .more-button {
   inline-size: 100%;
-  padding: 6px;
 }
 
 .content__card-link {
@@ -273,12 +272,12 @@ ol {
   cursor: pointer;
 }
 
-.content__card-link:hover .content__video-card-title {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
 .content__card-link:active {
-  background-color: rgb(255 255 255 / 0.4);
+  background-color: rgba(84, 80, 80, 1);
 }
 
 .content__card-link:focus {
@@ -290,7 +289,7 @@ ol {
 }
 
 .content__card-link_current {
-  background-color: rgb(255 255 255 / 0.2);
+  background-color: rgba(84, 80, 80, 1);
 }
 
 .content__list-item {
@@ -329,7 +328,7 @@ ol {
   font-size: 18px;
   line-height: 16px;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
