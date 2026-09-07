@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
+  outline: 0.5px solid white;
 }
 
 html {
@@ -67,6 +69,7 @@ ol {
   align-self: center;
   margin: auto;
   gap: 30px;
+  padding: 133px 30px;
 }
 
 .result {
@@ -79,13 +82,21 @@ ol {
 
 .result__video-container {
   position: relative;
-  block-size: 386px;
+  height: 386px;
 }
 
 .result__video {
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+  color: #fff;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
 }
 
 .search-form {
@@ -103,18 +114,20 @@ ol {
   font-size: 18px;
   line-height: 21px;
   margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
 }
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 22px;
+  gap: 15px;
 }
 
 .search-form__label {
   display: flex;
   align-items: center;
   inline-size: fit-content;
-  gap: 10px;
+  gap: 5px;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -131,7 +144,7 @@ ol {
   font-size: 18px;
   background-color: rgb(255 255 255 / 0.15);
   appearance: none;
-  field-sizing: content;
+  width: 225px;
 }
 
 .search-form__textfield::placeholder {
@@ -177,17 +190,17 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   block-size: 100%;
+  gap: 26px;
 }
 
 .title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 70px;
+  line-height: 94%;
   text-transform: uppercase;
-  margin-bottom: 20px;
 
-  color: #545050;
+  color: rgba(255, 255, 255, 1);
 }
 
 .content__accent {
@@ -204,6 +217,7 @@ ol {
   position: relative;
   block-size: 298px;
   overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -288,8 +302,7 @@ ol {
   box-sizing: border-box;
   display: flex;
   align-items: flex-start;
-  gap: 30px;
-  max-width: 390px;
+  width: 390px;
 }
 
 .content__video-card-description-container {
@@ -323,7 +336,7 @@ ol {
 
 .content__video-card-thumbnail {
   block-size: 103px;
-  min-inline-size: 194px;
+  width: 194px;
   object-fit: cover;
   object-position: center;
 }
