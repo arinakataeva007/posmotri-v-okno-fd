@@ -283,15 +283,14 @@ ol {
 }
 
 .content__list-item {
-  padding-left: 3px;
-  padding-right: 3px;
+  padding-inline: 3px;
 }
 
 .content__video-card {
   box-sizing: border-box;
   display: flex;
   align-items: flex-start;
-  width: 390px;
+  inline-size: 100%;
 }
 
 .content__video-card-description-container {
