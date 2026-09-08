@@ -67,36 +67,27 @@ ol {
   align-self: center;
   margin: auto;
   gap: 30px;
-  padding: 133px 30px;
 }
 
 .result {
-  display: flex;
-  flex-direction: column;
   flex-shrink: 0;
-  width: 711px;
-  gap: 16px;
+  inline-size: 711px;
 }
 
 .result__video-container {
   position: relative;
-  height: 386px;
-  width: 711px;
+  inline-size: 711px;
+  block-size: 386px;
+  overflow: hidden;
+  margin-bottom: 16px;
 }
 
 .result__video {
+  display: block;
   inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
-  color: #fff;
-  text-align: center;
-  font-family: Oswald, sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-transform: uppercase;
 }
-
 .search-form {
   display: flex;
   align-items: flex-start;
@@ -184,10 +175,10 @@ ol {
 }
 
 .content__details {
+  flex-shrink: 0;
+  inline-size: 396px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  block-size: 100%;
   gap: 26px;
 }
 
@@ -215,7 +206,6 @@ ol {
   position: relative;
   block-size: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 30px;
